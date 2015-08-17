@@ -31,6 +31,11 @@ function handleText(textNode)
 {
 	var v = textNode.nodeValue;
 
+	v = v.replace(/Путіним/g, "Хуйлом");
+	v = v.replace(/Путіну/g, "Хуйлу");
+	v = v.replace(/Путіна/g, "Хуйла");
+	v = v.replace(/Путін/g, "Хуйло");
+
 	v = v.replace(/Путине/g, "Хуйле");
 	v = v.replace(/Путиным/g, "Хуйлом");
 	v = v.replace(/Путину/g, "Хуйлу");
